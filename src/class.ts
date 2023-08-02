@@ -112,7 +112,7 @@ export class Draughts {
           turn: gameOwner,
         });
         const rows = await ctx.database.get('draughts_table', {}, ['id']);
-        const id = rows[rows.length - 1].id;
+        const id = rows[rows.length - 1].id === undefined ? 1 : rows[rows.length - 1].id;
         session.send(
           h('quote', { id: session.messageId }) +
             `编号为${id}的国际象棋对局已创建,由${gameOwner}先手`

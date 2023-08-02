@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-draughts",
   "description": "使用koishi下国际象棋",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "contributors": [
     "KIRA2ZERO <914489374@qq.com>"
   ],

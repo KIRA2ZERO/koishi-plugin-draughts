@@ -1,6 +1,6 @@
 import { Context, Schema, h } from 'koishi'
 
-import { Draughts } from './class.js'
+import { Draughts } from './class'
 
 export const name = 'draughts'
 
