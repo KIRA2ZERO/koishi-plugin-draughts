@@ -1,9 +1,9 @@
 {
   "name": "koishi-plugin-draughts",
   "description": "使用koishi下国际象棋",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "contributors": [
-    "KIRA <914489374@qq.com>"
+    "KIRA2ZERO <914489374@qq.com>"
   ],
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -14,7 +14,7 @@
   "license": "MIT",
   "homepage": "https://github.com/KIRA2ZERO/koishi-plugin-draughts",
   "repository": {
-    "type": "github",
+    "type": "git",
     "url": "git+https://github.com/KIRA2ZERO/koishi-plugin-draughts.git"
   },
   "scripts": {},

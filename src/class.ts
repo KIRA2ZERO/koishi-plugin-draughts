@@ -86,7 +86,7 @@ export class Draughts {
         gameParticipants.push(options.target);
         createNewGame(gameOwner, gameParticipants);
       } else {
-        session.send(`等待另一位玩家加入对局\n请回复：【参与对局】`);
+        session.send(`等待另一位玩家加入对局\n请回复:【参与对局】`);
         ctx.middleware(async (session, next) => {
           if (
             session.content === `参与对局` &&
@@ -112,7 +112,7 @@ export class Draughts {
           turn: gameOwner,
         });
         const rows = await ctx.database.get('draughts_table', {}, ['id']);
-        const id = rows[rows.length - 1].id + 1;
+        const id = rows[rows.length - 1].id;
         session.send(
           h('quote', { id: session.messageId }) +
             `编号为${id}的国际象棋对局已创建,由${gameOwner}先手`
